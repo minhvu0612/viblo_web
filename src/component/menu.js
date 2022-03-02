@@ -48,9 +48,16 @@ function Menu(){
             </div>
             <div className="menu--search">
                 <input type="search" placeholder="Tìm kiếm trên Viblo" 
-                value={search_value} 
+                defaultValue={localStorage.getItem("s_value")} 
                 onChange={(e) => {setSValue(e.target.value); localStorage.setItem("s_value", e.target.value)}} />
-                <button onClick={() => {window.location.href = "/search"}}>SE</button>
+                <button onClick={() => {
+                    if (search_value !== ""){
+                        window.location.href = "/search";
+                    }
+                    else{
+                        window.location.href = "/";
+                    }
+                }}>SE</button>
             </div>
             {
                 (Cookies.get("user"))?(
