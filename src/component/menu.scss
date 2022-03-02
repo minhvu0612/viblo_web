@@ -1,0 +1,129 @@
+:root{
+    --color--viblo: #5488c7;
+    --color--viblo--hover: #2363b1;
+}
+
+
+.menu{
+    width: 100%;
+    height: 60px;
+    padding-left: 15%;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.1);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+    img{
+        width: 60px;
+        height: 40px;
+    }
+
+    .menu--render--pages{
+        margin-left: 50px;
+    }
+
+    .menu--search{
+        margin-left: 150px;
+        input{
+            width: 380px;
+            height: 40px;
+            border: 2px solid rgba($color: #000000, $alpha: 0.2);
+            border-right: none;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+        input:focus{
+            outline: none;
+        }
+        button{
+            width: 40px;
+            height: 40px;
+            background-color: var(--color--viblo);
+            border: none;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            color: white;
+        }
+        button:hover{
+            background-color: var(--color--viblo--hover);
+        }
+    }
+
+    .menu--div--user{
+        margin-left: 150px;
+        position: relative;
+        button{
+            margin-left: 40px;
+            width: 100px;
+            height: 40px;
+            background-color: var(--color--viblo);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 3px;
+        }
+        button:hover{
+            background-color: var(--color--viblo--hover);
+        }
+
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+        }
+    }
+}
+
+.menu--link{
+    margin-left: 50px;
+    text-decoration: none;
+    color: rgba($color: #000000, $alpha: 0.4);
+    font-size: 0.95em;
+    font-weight: bold;
+}
+.menu--link:hover{
+    color: #000000;
+}
+
+
+.menu--user{
+    position: absolute;
+    top: 42px;
+    right: 0px;
+    width: 200px;
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    border-radius: 5px;
+    div{
+        display: flex;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+        padding: 10px 20px;
+        align-items: center;
+        background-color: whitesmoke;
+        p{
+            margin-left: 10px;
+        }
+    }
+    .user--menu--link{
+        display: block;
+        width: 100%;
+        height: 40px;
+        background-color: white;
+        color: rgba($color: #000000, $alpha: 0.4);
+        font-weight: bold;
+        padding: 8px 20px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    .user--menu--link:hover{
+        background-color: var(--color--viblo);
+        color: white;
+    }
+}
+
+.disable{
+    display: none;
+}

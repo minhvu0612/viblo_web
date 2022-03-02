@@ -1,0 +1,26 @@
+
+
+.cmt{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    .avt--cmt{
+        margin-right: 10px;
+    }
+
+    .cmt--content{
+        padding: 5px 20px;
+        border-radius: 5px;
+        background-color: rgba($color: aliceblue, $alpha: 0.7);
+        width: 75%;
+        .cmt-u{
+            font-weight: bold;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}

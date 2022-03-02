@@ -1,0 +1,33 @@
+:root{
+    --color--viblo: #5488c7;
+    --color--viblo--hover: #2363b1;
+}
+
+.search{
+    width: 100%;
+    height: 100vh;
+
+
+    .search--container{
+        position: absolute;
+        padding-top: 60px;
+        padding-left: 200px;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+
+        .search--main{
+            width: 74.95%;
+            overflow-y: scroll;
+            
+            .search--main--child{
+                padding-left: 10%;
+                padding-bottom: 10%;
+                padding-top: 20px;
+                box-sizing: border-box;
+                overflow-y: scroll;
+            }
+        }
+    }
+}

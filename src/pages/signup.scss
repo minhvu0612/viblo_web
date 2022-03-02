@@ -1,0 +1,74 @@
+:root{
+    --color--viblo: #5488c7;
+    --color--viblo--hover: #2363b1;
+}
+
+.signup{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color--viblo);
+
+    .signup--form{
+        width: 25%;
+        height: 80vh;
+        background-color: white;
+        border-radius: 10px;
+        padding: 50px;
+        box-sizing: border-box;
+        box-shadow: 3px 3px 3px 3px var(--color--viblo--hover);
+        label{
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        input, select{
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-bottom: 2px solid black;
+            font-size: 1.1em;
+            height: 30px;
+        }
+        input:focus, select:focus{
+            outline: none;
+        }
+        button{
+            width: 100px;
+            height: 35px;
+            float: right;
+            border: none;
+            background-color: var(--color--viblo);
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        button:hover{
+            background-color: var(--color--viblo--hover);
+        }
+        p{
+            display: block;
+            margin-top: 70px;
+            span{
+                color: var(--color--viblo);
+                cursor: pointer;
+                font-weight: bold;
+            }
+            span{
+                color: var(--color--viblo--hover);
+            }
+        }
+    }
+}
+
+
+.alert{
+    position: absolute;
+    top: 50px;
+    background-color: rgb(233, 73, 73);
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
